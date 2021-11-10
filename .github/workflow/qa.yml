@@ -1,4 +1,4 @@
-name: ISANTEPLUS QA
+name: KENYAEMR QA tEST
 on:
   workflow_dispatch:
 jobs:
@@ -9,11 +9,11 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Checkout isanteplus qaframework
+      - name: Checkout kenyaEmr-contrib-qaframework
         uses: actions/checkout@v2
         with:
           repository: ${{github.repository}}
-      - name: Run KenyaEmr QA and Publish Test results
+      - name: Run kenyaEmr QA and Publish Test results
         run: |
           echo "cucumber.publish.enabled=true" > src/test/resources/cucumber.properties
           mvn clean install -DskipTests=true 
