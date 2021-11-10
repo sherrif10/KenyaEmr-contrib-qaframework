@@ -17,7 +17,6 @@ import io.cucumber.java.en.When;
 public class LoginSteps extends TestBase {
 	
 	private LoginPage loginPage;
-	
 	private HomePage homePage;
 	
 	@After(RunTest.HOOK.LOGIN)

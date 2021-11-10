@@ -8,33 +8,17 @@ import org.openqa.selenium.By;
 public class HomePage extends Page {
 	
 	private final By LINK_LOGOUT = By.className("logout");
-	
 	private final String PATH_HOME_RESET = "referenceapplication/home.page?noredirect=true";
-	
 	private final By FIELD_OLD_PASSWORD = By.xpath("//input[@id='oldPassword-field']");
-	
 	private final By FIELD_NEW_PASSWORD = By.xpath("//input[@id='newPassword-field']");
-	
 	private final By FIELD_CONFIRM_PASSWORD = By.xpath("//input[@id='confirmPassword-field']");
-	
 	private static final By SAVE_BUTTON = By.id("save-button");
-	
 	private final String PATH_HOME = "/referenceapplication/home.page";
-	
-	private static final By FIND_PATIENT_RECORD = By
-	        .id("coreapps-activeVisitsHomepageLink-coreapps-activeVisitsHomepageLink-extension");
-	
-	private static final By DATA_MANAGEMENT = By
-	        .cssSelector("#coreapps-datamanagement-homepageLink-coreapps-datamanagement-homepageLink-extension");
-	
-	private final By APP_REGISTER_PATIENT = By.id(
-	    "referenceapplication-registrationapp-registerPatient-homepageLink-referenceapplication-registrationapp-registerPatient-homepageLink-extension");
-	
-	private final By APP_SYSTEM_ADMIN = By
-	        .id("coreapps-systemadministration-homepageLink-coreapps-systemadministration-homepageLink-extension");
-	
-	private final By REPORTS_MANAGEMENT = By
-	        .cssSelector("#reportingui-reports-homepagelink-reportingui-reports-homepagelink-extension");
+	private static final By FIND_PATIENT_RECORD = By.id("coreapps-activeVisitsHomepageLink-coreapps-activeVisitsHomepageLink-extension");
+	private static final By DATA_MANAGEMENT = By.cssSelector("#coreapps-datamanagement-homepageLink-coreapps-datamanagement-homepageLink-extension");
+	private final By APP_REGISTER_PATIENT = By.id("referenceapplication-registrationapp-registerPatient-homepageLink-referenceapplication-registrationapp-registerPatient-homepageLink-extension");
+	private final By APP_SYSTEM_ADMIN = By.id("coreapps-systemadministration-homepageLink-coreapps-systemadministration-homepageLink-extension");
+	private final By REPORTS_MANAGEMENT = By .cssSelector("#reportingui-reports-homepagelink-reportingui-reports-homepagelink-extension");
 	
 	public HomePage(Page page) {
 		super(page);
